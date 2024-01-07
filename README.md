@@ -2,17 +2,16 @@
 
 ### Table of Contents
 
-1. [Create SSH key for each account](#create-ssh-key)  
-2. [Add SSH keys to SSH Agent](#add-ssh)  
-3. [Add SSH public key to the Github](#add-ssh-github)  
-4. [Create a Config File](#create-config-file)  
-5. [Cloning using different accounts](#clone-different-accounts)
-6. [Commits and Push using different accounts](#commits-push-different-account)  
+1. [Create SSH key for each account](#create-ssh-key-for-each-account)  
+2. [Add SSH keys to SSH Agent](#add-ssh-keys-to-ssh-agent)
+3. [Add SSH public key to the Github](#add-ssh-public-key-to-the-github)  
+4. [Create a Config File](#create-a-config-file)  
+5. [Cloning using different accounts](#cloning-using-different-accounts)
+6. [Commits and Push using different accounts](#commits-and-push-using-different-accounts)  
 
 
 
 ### Create SSH key for each account
-(#create-ssh-key)
 
 Example Accounts: 
 
@@ -55,7 +54,6 @@ After entering the command the terminal will ask for passphrase, you can leave i
 
 
 ### Add SSH keys to SSH Agent
-(#add-ssh)
 
 On Windows, you have to activate ssh-agent. So, you powershell with Admin permission.
 
@@ -84,7 +82,7 @@ You can read more about adding ssh-agent on Windows [here.](https://learn.micros
 
 
 ### Add SSH public key to the Github
-(#add-ssh-github)
+
 Now you have to add the PUBLIC keys to the corresponding github accounts.
 
 For doing this we need to:
@@ -101,7 +99,6 @@ __2. Paste the public key on Github__
 
 
 ### Create a Config File
-(#create-config-file)
 
 The **~/.ssh/config** file allows us specify many config options for SSH.
 
@@ -149,7 +146,6 @@ To clone a repository:
  <br>
 
 ### Commits and Push using different accounts
-(#commits-push-different-account)
 
 To ensure your commits and pushes from each repository uses the correct user — you have to configure **user.email** and **user.name** in every repository freshly cloned or existing before.
 
